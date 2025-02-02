@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Order Service</title>
+  <link rel="stylesheet" href="website.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>FOODIE GUY</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="http://127.0.0.1:5500/menu.html">Menu</a></li>
+        <li><a href="http://127.0.0.1:5500/order%20now.html">Order Now</a></li>
+        <li><a href="http://127.0.0.1:5500/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-item">
+      <img src="download (4).jpeg" alt="Pizza">
+      <div class="item-details">
+        <h3>Pizza</h3>
+        <p>Delicious cheese pizza with extra toppings.</p>
+        <span>100</span>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="download (5).jpeg" alt="Burger">
+      <div class="item-details">
+        <h3>Burger</h3>
+        <p>Classic burger with fries.</p>
+        <span>80</span>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="download (6).jpeg" alt="Pasta">
+      <div class="item-details">
+        <h3>Pasta</h3>
+        <p>Italian pasta with a rich tomato sauce.</p>
+        <span>120</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="order">
+    <h2>Order Now</h2>
+    <form action="submit_order.php" method="POST">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="food">Choose your food:</label>
+      <select id="food" name="food">
+        <option value="pizza">Pizza</option>
+        <option value="burger">Burger</option>
+        <option value="pasta">Pasta</option>
+      </select>
+
+      <label for="address">Delivery Address:</label>
+      <input type="text" id="address" name="address" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="phone" required>
+
+      <button type="submit">Place Order</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: foodieguy18@gmail.com</p>
+    <p>Phone: 9876488612</p>
+  </section>
+
+  
+</body>
+</html>
